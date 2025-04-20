@@ -30,3 +30,21 @@ document.getElementById('registerForm').addEventListener('submit', (e) => {
     document.getElementById('registerEmail').value = '';
     document.getElementById('registerPassword').value = '';
 });
+
+document.getElementById('loginForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    const adminUser = {
+        name: 'Admin',
+        email: 'admin@quiz.com',
+        password: 'admin123',
+        scores: {},
+        isAdmin: true
+    };
+    if (email === 'admin@quiz.com' && password === 'admin123') {
+        localStorage.setItem('currentUser', JSON.stringify(adminUser));
+        window.location.href = 'dashboard.html';
+        return;
+    }
+});

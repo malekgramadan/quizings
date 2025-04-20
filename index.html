@@ -9,17 +9,18 @@
     <body>
         <div class="auth-container">
             <h1>Welcome to Quizings &#128079;</h1>
-            <form class="auth-form">
+            <form id="loginForm" class="auth-form">
                 <h2>Login</h2>
                 <div class="form-group">
                     <label>&#128231;Email</label>
-                    <input type="email">
+                    <input type="email" id="loginEmail" required>
                 </div>
                 <div class="form-group">
                     <label>&#128274;Password</label>
-                    <input type="password">
+                    <input type="password" id="loginPassword" required>
                 </div>
                 <button type="submit" class="submit-btn">Login</button>
+                <p id="loginError" class="error-message"></p>
             </form>
 
             <form id="registerForm" class="auth-form">
@@ -28,15 +29,15 @@
                 <h2>Register</h2>
                 <div class="form-group">
                     <label>&#128221;Name</label>
-                    <input type="text" id="registerName">
+                    <input type="text" id="registerName" required>
                 </div>
                 <div class="form-group">
                     <label>&#128231;Email</label>
-                    <input type="email" id="registerEmail">
+                    <input type="email" id="registerEmail" required>
                 </div>
                 <div class="form-group">
                     <label>&#128274;Password</label>
-                    <input type="password" id="registerPassword">
+                    <input type="password" id="registerPassword" required>
                 </div>
                 <button type="submit" class="submit-btn">Register</button>
                 <p id="registerError" class="error-message"></p>
