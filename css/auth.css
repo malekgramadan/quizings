@@ -35,6 +35,13 @@ body {
     color: #333;
 }
 
+.auth-form h4 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #a7a6a6;
+}
+
 .form-group {
     margin-bottom: 15px;
     text-align: left;
