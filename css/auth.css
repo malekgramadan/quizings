@@ -40,6 +40,7 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
     color: #a7a6a6;
+    font-weight: normal;
 }
 
 .form-group {
@@ -59,6 +60,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .submit-btn {
@@ -71,8 +73,16 @@ body {
     font-size: 16px;
     margin-top: 10px;
     transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .submit-btn:hover {
     background-color: #3367d6;
+}
+
+.error-message {
+    color: #ff4444;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
 }
