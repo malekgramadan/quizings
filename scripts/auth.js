@@ -25,4 +25,8 @@ document.getElementById('registerForm').addEventListener('submit', (e) => {
     localStorage.setItem('users', JSON.stringify(users));
     document.getElementById('registerError').textContent = '';
     alert('Registration successful! You can now log in.');
+    //Clears the fields after a successful register
+    document.getElementById('registerName').value = '';
+    document.getElementById('registerEmail').value = '';
+    document.getElementById('registerPassword').value = '';
 });
