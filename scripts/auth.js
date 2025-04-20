@@ -95,7 +95,7 @@ if (!localStorage.getItem('quizzes')) {
             },
             {
                 question: "What force pulls objects toward Earth?",
-                options: ["Magnetism", "Gravity", "Friction"],
+                options: ["Magnetism", "Friction", "Gravity"],
                 answer: "Gravity"
             }
             ]
@@ -111,12 +111,12 @@ if (!localStorage.getItem('quizzes')) {
                 },
                 {
                     question: "What is the capital of Canada?",
-                    options: ["Toronto", "Ottawa", "Vancouver"],
+                    options: ["Toronto", "Vancouver", "Ottawa"],
                     answer: "Ottawa"
                 },
                 {
                     question: "How many states are in the United States of America?",
-                    options: ["52", "50", "48"],
+                    options: ["50", "52", "48"],
                     answer: "50"
                 },
             ]
