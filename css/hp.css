@@ -36,13 +36,13 @@ h2 {
     margin-bottom: 20px;
 }
 
-.quizz-box {
+.quiz-box {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
 }
 
-.quizz-card {
+.quiz-card {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
