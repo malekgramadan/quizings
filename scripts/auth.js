@@ -118,7 +118,7 @@ if (!localStorage.getItem('quizzes')) {
                     question: "How many states are in the United States of America?",
                     options: ["52", "50", "48"],
                     answer: "50"
-                }
+                },
             ]
         }
         //You can add more questions but bewary of the duplicate IDs to avoid errors.
