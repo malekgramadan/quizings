@@ -16,6 +16,18 @@ body {
     min-height: 80vh;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #4285f4;
+    margin: 0;
+}
+
 .back-btn {
     background-color: #666;
     color: white;

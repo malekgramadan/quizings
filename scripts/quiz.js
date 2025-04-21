@@ -9,3 +9,4 @@ if (!quiz) {
 document.getElementById('backBtn').addEventListener('click', () => {
     window.location.href = 'homepage.html';
 });
+document.getElementById('quizTitle').textContent = quiz.title;
