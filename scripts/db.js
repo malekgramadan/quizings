@@ -19,4 +19,17 @@ users.forEach(user => {
     const emailCell = document.createElement('td');
     emailCell.textContent = user.email;
     row.appendChild(emailCell);
+    const scoresCell = document.createElement('td');
+    scoresCell.className = 'scores-cell';
+    if (user.scores && Object.keys(user.scores).length > 0) {
+        let scoresText = '';
+        for (const quizId in user.scores) {
+            const quiz = quizzes.find(q => q.id == quizId);
+            if (quiz) {
+                scoresText += `${quiz.title}: ${user.scores[quizId]}/${quiz.questions.length}, `;
+            }
+        }
+    }
+    row.appendChild(scoresCell);
+    usersTable.appendChild(row);
 });
