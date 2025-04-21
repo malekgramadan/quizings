@@ -57,6 +57,28 @@ header h1 {
     margin-bottom: 15px;
 }
 
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option input {
+    width: 16px;
+    height: 16px;
+}
+
+.option label {
+    color: #555;
+    cursor: pointer;
+}
+
 .submit-btn {
     background-color: #4285f4;
     color: white;
