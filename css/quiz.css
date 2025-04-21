@@ -16,6 +16,20 @@ body {
     min-height: 80vh;
 }
 
+.back-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back-btn:hover {
+    background-color: #444;
+}
+
 .quiz-container {
     margin-bottom: 30px;
 }
