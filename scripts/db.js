@@ -29,6 +29,10 @@ users.forEach(user => {
                 scoresText += `${quiz.title}: ${user.scores[quizId]}/${quiz.questions.length}, `;
             }
         }
+        scoresCell.textContent = scoresText;
+    } 
+    else {
+        scoresCell.textContent = 'No scores yet';
     }
     row.appendChild(scoresCell);
     usersTable.appendChild(row);

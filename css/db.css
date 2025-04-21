@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, blue , white);
+    background-image: linear-gradient(to right, blue, white);
     min-height: 100vh;
 }
 
@@ -38,6 +38,10 @@ header h1 {
     font-family: 'Poppins', sans-serif;
 }
 
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+
 .dashboard-content h2 {
     color: #333;
     border-bottom: 2px solid #4285f4;
@@ -61,4 +65,15 @@ th {
     background-color: #f8f9fa;
     color: #333;
     font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.scores-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
