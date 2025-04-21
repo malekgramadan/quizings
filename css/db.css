@@ -27,3 +27,13 @@ header h1 {
     color: #4285f4;
     margin: 0;
 }
+
+.logout-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
