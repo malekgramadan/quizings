@@ -7,6 +7,7 @@ const quiz = JSON.parse(localStorage.getItem('currentQuiz'));
 if (!quiz) {
     window.location.href = 'homepage.html';
 }
+document.getElementById('quizTitle').textContent = quiz.title;
 document.getElementById('backBtn').addEventListener('click', () => {
     window.location.href = 'homepage.html';
 });
@@ -42,6 +43,16 @@ document.getElementById('quizForm').addEventListener('submit', (e) => {
             score++;
         }
     });
+    // Save score for current user
+    const users = JSON.parse(localStorage.getItem('users'));
+    const userIndex = users.findIndex(u => u.email === currentUser.email);
+    if (userIndex !== -1) {
+        users[userIndex].scores[quiz.id] = score;
+        localStorage.setItem('users', JSON.stringify(users));
+        // Update current user in localStorage
+        currentUser.scores = users[userIndex].scores;
+        localStorage.setItem('currentUser', JSON.stringify(currentUser));
+    }
     document.getElementById('quizContainer').classList.add('hidden');
     document.getElementById('resultsContainer').classList.remove('hidden');
     document.getElementById('scoreDisplay').textContent = `You scored ${score} out of ${quiz.questions.length}!`;
