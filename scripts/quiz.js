@@ -18,7 +18,7 @@ quiz.questions.forEach((question, index) => {
     questionDiv.className = 'question';
     questionDiv.innerHTML = `<h3>${index + 1}. ${question.question}</h3>`;
     questionsContainer.appendChild(questionDiv);
-    
+
     const optionsDiv = document.createElement('div');
     optionsDiv.className = 'options';
     question.options.forEach((option, optionIndex) => {
@@ -31,4 +31,15 @@ quiz.questions.forEach((question, index) => {
         optionsDiv.appendChild(optionDiv);
     });
     questionDiv.appendChild(optionsDiv);
+});
+
+document.getElementById('quizForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    let score = 0;
+    quiz.questions.forEach((question, index) => {
+        const selectedOption = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selectedOption && selectedOption.value === question.answer) {
+            score++;
+        }
+    });
 });
