@@ -10,3 +10,10 @@ document.getElementById('backBtn').addEventListener('click', () => {
     window.location.href = 'homepage.html';
 });
 document.getElementById('quizTitle').textContent = quiz.title;
+const questionsContainer = document.getElementById('questionsContainer');
+quiz.questions.forEach((question, index) => {
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'question';
+    questionDiv.innerHTML = `<h3>${index + 1}. ${question.question}</h3>`;
+    questionsContainer.appendChild(questionDiv);
+});
