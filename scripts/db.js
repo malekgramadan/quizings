@@ -29,9 +29,8 @@ users.forEach(user => {
                 scoresText += `${quiz.title}: ${user.scores[quizId]}/${quiz.questions.length}, `;
             }
         }
-        scoresCell.textContent = scoresText;
-    } 
-    else {
+        scoresCell.textContent = scoresText.slice(0, -2); // Remove the last comma and space
+    } else {
         scoresCell.textContent = 'No scores yet';
     }
     row.appendChild(scoresCell);
