@@ -42,4 +42,7 @@ document.getElementById('quizForm').addEventListener('submit', (e) => {
             score++;
         }
     });
+    document.getElementById('quizContainer').classList.add('hidden');
+    document.getElementById('resultsContainer').classList.remove('hidden');
+    document.getElementById('scoreDisplay').textContent = `You scored ${score} out of ${quiz.questions.length}!`;
 });

@@ -95,3 +95,25 @@ header h1 {
 .submit-btn:hover {
     background-color: #3367d6;
 }
+
+.results-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.results-container h2 {
+    color: #4285f4;
+    margin-top: 0;
+}
+
+.results-container p {
+    font-size: 18px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
