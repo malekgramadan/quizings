@@ -9,6 +9,8 @@ if (!currentUser) {
 
 document.getElementById('userName').textContent = currentUser.name ? `, ${currentUser.name}` : '';
 
+const quizzes = JSON.parse(localStorage.getItem('quizzes')) || [];
+const quizzesList = document.getElementById('quizzesList');
 quizzes.forEach(quiz => {
     const quizCard = document.createElement('div');
     quizCard.className = 'quiz-card';
